@@ -21,7 +21,7 @@ public class NumberGenerator {
      */
     private Integer getNumber(int max, List<Integer> actualNumbers) {
         Random random = new Random();
-        int number = random.nextInt(max + 1);
+        int number = random.nextInt(max)+1;
         if (actualNumbers.contains(number)) {
             number = getNumber(max, actualNumbers);
         }
